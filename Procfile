@@ -1,1 +1,1 @@
-web: heroku-php-nginx -F php-fpm.conf app/public/
+web: heroku-php-nginx -F php-fpm-back.conf public/
