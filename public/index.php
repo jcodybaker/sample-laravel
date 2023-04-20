@@ -54,7 +54,13 @@ $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 $response = $kernel->handle(
     $request = Illuminate\Http\Request::capture()
 );
+echo date('h:i:s') . "<br>";
+
+
 sleep(40);
+
+//start again
+echo date('h:i:s');
 $response->send();
 
 $kernel->terminate($request, $response);
