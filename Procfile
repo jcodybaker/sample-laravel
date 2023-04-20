@@ -1,0 +1,1 @@
+web: heroku-php-apache2 -F php-fpm.conf public/
